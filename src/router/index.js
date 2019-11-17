@@ -6,7 +6,7 @@ import Login from '../views/Login.vue'
 import Baseline from '../views/Baseline.vue'
 
 import Home from '../views/Home.vue'
-import Data from '../views/Data.vue'
+import Data from '../views/Data/'
 
 Vue.use(VueRouter)
 
