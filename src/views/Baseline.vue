@@ -38,23 +38,25 @@
       </v-list>
 
       <template v-slot:append>
-        <v-list-item link :to="{path:'/about'}">
-          <v-list-item-action>
-            <v-icon>mdi-help-box</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>About</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
+        <v-list dense>
+          <v-list-item link :to="{path:'/about'}">
+            <v-list-item-action>
+              <v-icon>mdi-help-box</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>About</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
 
-        <v-list-item link :to="{path:'/login'}">
-          <v-list-item-action>
-            <v-icon>mdi-power</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Logout</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
+          <v-list-item link :to="{path:'/login'}">
+            <v-list-item-action>
+              <v-icon>mdi-power</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Logout</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list>
       </template>
     </v-navigation-drawer>
 
