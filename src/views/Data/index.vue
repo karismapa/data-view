@@ -1,52 +1,31 @@
 <template>
-  <div class="small">
-    <line-chart :chart-data="datacollection"></line-chart>
-    <button @click="fillData()">Randomize</button>
-  </div>
+  <v-container>
+    <v-row>
+      <v-col cols="8">
+        <ChartAccess />
+      </v-col>
+      <v-col cols="4">
+        <ChartUsage />
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
+        <ChartActive />
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
-  import LineChart from './LineChart.js'
+import ChartActive from "./ChartActive.vue"
+import ChartAccess from "./ChartAccess.vue"
+import ChartUsage from "./ChartUsage.vue"
 
-  export default {
-    components: {
-      LineChart
-    },
-    data () {
-      return {
-        datacollection: null
-      }
-    },
-    mounted () {
-      this.fillData()
-    },
-    methods: {
-      fillData () {
-        this.datacollection = {
-          labels: [this.getRandomInt(), this.getRandomInt()],
-          datasets: [
-            {
-              label: 'Data One',
-              backgroundColor: '#f87979',
-              data: [this.getRandomInt(), this.getRandomInt()]
-            }, {
-              label: 'Data One',
-              backgroundColor: '#f87979',
-              data: [this.getRandomInt(), this.getRandomInt()]
-            }
-          ]
-        }
-      },
-      getRandomInt () {
-        return Math.floor(Math.random() * (50 - 5 + 1)) + 5
-      }
-    }
-  };
-</script>
-
-<style>
-  .small {
-    max-width: 600px;
-    margin:  150px auto;
+export default {
+  components: {
+    ChartActive,
+    ChartAccess,
+    ChartUsage
   }
-</style>
+};
+</script>
