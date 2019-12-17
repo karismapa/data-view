@@ -1,4 +1,4 @@
-# data-view
+# dashboard
 
 ## Project setup
 ```
