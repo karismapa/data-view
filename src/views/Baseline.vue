@@ -7,7 +7,7 @@
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="title">
-            Data-view
+            vue-dashboard
           </v-list-item-title>
           <v-list-item-subtitle>
             Insert subtext here
@@ -66,14 +66,14 @@
       dark
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-toolbar-title>Data-view</v-toolbar-title>
+      <v-toolbar-title>vue-dashboard</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-tooltip bottom>
         <template v-slot:activator="{ on }">
           <v-btn
             icon
             large
-            href="https://github.com/karismapa/data-view"
+            href="https://github.com/karismapa/vue-dashboard"
             target="_blank"
             v-on="on"
           >
